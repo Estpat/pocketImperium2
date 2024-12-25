@@ -23,4 +23,11 @@ public class SectorCard {
 		
 	}
 
+	public int getTotalLevel() {
+		int level = 0;
+		for(Hexagone h: hexagones.values())
+			level += h.getTotalLevel();
+		return 0;
+	}
+
 }

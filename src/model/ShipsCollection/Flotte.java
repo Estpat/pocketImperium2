@@ -7,6 +7,12 @@ import model.Ships.*;
 public class Flotte {
 	private List<Vaisseau> vaisseauxDeLaFlotte;
 
+	public List<Vaisseau> getVaisseauxDeLaFlotte() {
+		return vaisseauxDeLaFlotte;
+	}
+	public void setVaisseauxDeLaFlotte(List<Vaisseau> vaisseauxDeLaFlotte) {
+		this.vaisseauxDeLaFlotte = vaisseauxDeLaFlotte;
+	}
 	public Flotte() {
 		vaisseauxDeLaFlotte = new ArrayList<Vaisseau>();
 	}

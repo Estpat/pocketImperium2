@@ -7,9 +7,7 @@ package model.Cards;
  * 
  */
 public class CommandCard {
-	/**
-	 * 
-	 */
+
 	private boolean estVisible = false;
 	private NiveauDePriorité niveauDePriorité;
 	private String nom;
@@ -32,8 +30,15 @@ public class CommandCard {
 	public String getNom() {
 		return nom;
 	}
+	public boolean equals(Object obj) {
+		if(obj instanceof CommandCard){
+			CommandCard C = (CommandCard) obj;
+			return C.nom == nom && C.niveauDePriorité == niveauDePriorité;
+		}
+		return false;
+	}
 	
-	public void exécuterCommande() {
+	public void exécuterCommande(int quantite) {
 		
 	}
 
